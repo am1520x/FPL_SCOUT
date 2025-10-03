@@ -1,0 +1,120 @@
+{
+  "initial_setup_and_team_management": {
+    "budget": "\u00a3100 million",
+    "squad_composition": {
+      "total_players": 15,
+      "positions": {
+        "goalkeepers": 2,
+        "defenders": 5,
+        "midfielders": 5,
+        "forwards": 3
+      },
+      "max_players_per_club": 3
+    },
+    "starting_team": {
+      "players": 11,
+      "formation_requirements": {
+        "minimum_defenders": 3,
+        "at_least_one_goalkeeper": true
+      },
+      "captain_and_vice_captain": {
+        "captain_doubles_score": true,
+        "vice_captain_substituted_if_captain_absent": true
+      },
+      "substitutions": {
+        "auto_sub_on_non_playing": true,
+        "bench_order_matters": true,
+        "must_maintain_valid_formation": true
+      }
+    },
+    "mini_leagues_and_cup": {
+      "mini_leagues": [
+        "global",
+        "national",
+        "club-based",
+        "weekly",
+        "private"
+      ],
+      "head_to_head_format": true,
+      "fpl_cup": {
+        "knockout_competition": true,
+        "winner_progresses": true,
+        "score_minus_transfer_points_used": true
+      }
+    }
+  },
+  "transfers": {
+    "free_transfers": {
+      "per_gameweek": 1,
+      "carry_over": {
+        "max_carry_over": 4,
+        "max_free_transfers": 5
+      }
+    },
+    "additional_transfers": {
+      "after_free_transfers_used": {
+        "each_extra_transfer_cost": -4
+      }
+    }
+  },
+  "scoring_and_chips": {
+    "points_scoring": {
+      "based_on_real_life_performance": true,
+      "inclusions": [
+        "goals",
+        "assists",
+        "clean_sheets",
+        "penalties_saved",
+        "bonus_points_system"
+      ],
+      "deductions": [
+        "yellow_cards",
+        "red_cards",
+        "conceded_goals",
+        "own_goals"
+      ]
+    },
+    "bonus_points_system": {
+      "optaprovided": true,
+      "top_three_performance_per_game": true
+    },
+    "defensive_contributions": {
+      "defenders": {
+        "threshold": 10,
+        "metrics": [
+          "clearances",
+          "blocks",
+          "interceptions",
+          "tackles"
+        ],
+        "bonus_points": 2
+      },
+      "midfielders_and_forwards": {
+        "threshold": 12,
+        "metrics": [
+          "clearances",
+          "blocks",
+          "interceptions",
+          "tackles",
+          "ball_recoveries"
+        ],
+        "bonus_points": 2
+      }
+    },
+    "assist_rules": {
+      "simplified_definition": true,
+      "less_subjectivity": true
+    },
+    "chips": {
+      "types": [
+        "Wildcard",
+        "Free Hit",
+        "Triple Captain",
+        "Bench Boost"
+      ],
+      "sets_per_season": 2,
+      "use_deadline_first_set": "before Gameweek 19 deadline",
+      "assistant_manager_chip": false
+    }
+  }
+}

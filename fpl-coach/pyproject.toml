@@ -10,8 +10,10 @@ target-version = "py311"
 select = ["E", "F", "I", "W", "UP", "B", "C90", "N", "BLE"]
 ignore = ["E203", "E266", "E501"]
 
-[tool.ruff.isort]
-"known-first-party" = ["fpl"]
+[tool.ruff.lint.isort]
+known-first-party = ["fpl"]
+combine-as-imports = true
+force-sort-within-sections = true
 
 [tool.mypy]
 python_version = "3.11"
