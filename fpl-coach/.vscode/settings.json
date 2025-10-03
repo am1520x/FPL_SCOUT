@@ -1,0 +1,9 @@
+{
+  "python.defaultInterpreterPath": ".venv/bin/python",
+  "python.testing.pytestArgs": ["-q"],
+  "python.testing.pytestEnabled": true,
+  "editor.formatOnSave": true,
+  "python.formatting.provider": "black",
+  "ruff.enable": true,
+  "ruff.lint.run": "onSave"
+}

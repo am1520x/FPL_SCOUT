@@ -1,0 +1,25 @@
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "UP", "B", "C90", "N", "BLE"]
+ignore = ["E203", "E266", "E501"]
+
+[tool.ruff.isort]
+"known-first-party" = ["fpl"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_unused_ignores = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+addopts = "-q -ra --cov=src/fpl --cov-report=term-missing"
+testpaths = ["tests"]

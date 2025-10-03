@@ -1,0 +1,11 @@
+{
+  "version": "0.2.0",
+  "configurations": [{
+    "name": "FPL Demo",
+    "type": "python",
+    "request": "launch",
+    "module": "fpl",
+    "args": ["demo"],
+    "console": "integratedTerminal"
+  }]
+}
